@@ -8,4 +8,4 @@ def my_each(Array)
   return new_array
 end
 
-my_each(Array) { puts array[i] }
+my_each(Array) { puts Array[i] }

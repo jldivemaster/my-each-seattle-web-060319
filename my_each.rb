@@ -1,11 +1,11 @@
 def my_each(array)
   i = 0
-  new_array = []
   while i < array.length
-    yield
-    i += 1
+    yield array[i]
   end
-  return new_array
+  array
 end
 
-my_each(array) { puts array[i] }
+my_each do |ele|
+  puts ele
+end

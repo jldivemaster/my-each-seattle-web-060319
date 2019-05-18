@@ -2,10 +2,10 @@ def my_each(array)
   i = 0
   new_array = []
   while i < array.length
-    yield(array[i])
+    yield
     i += 1
   end
   return new_array
 end
 
-my_each(array[i]) { puts array[i] }
+my_each(array) { puts array[i] }
